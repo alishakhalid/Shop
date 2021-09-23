@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Berry-BetterNotPout-EPI?$SQUARE-575x575-2X$",
+      "product_name": "BETTER",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$31.69"
+    },
+    {
+      "id": 2,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Berry-Hollyberry-EPI?$SQUARE-575x575-2X$",
+      "product_name": "HOLLYBERRY",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$44.67"
+    },
+    {
+      "id": 3,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Coral-Autumn-EPI?$SQUARE-575x575-2X$",
+      "product_name": "AUTUMN",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$27.44"
+    },
+    {
+      "id": 4,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Pink-SweaterWeather-EPI?$SQUARE-575x575-2X$",
+      "product_name": "SWEATER WEATHER",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$42.31"
+    },
+    {
+      "id": 5,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Nude-Twenty-EPI?$SQUARE-575x575-2X$",
+      "product_name": "SIXTEEN",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$40.59"
+    },
+    {
+      "id": 6,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Red-BiteMe-EPI?$SQUARE-575x575-2X$",
+      "product_name": "ROSE",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$48.81"
+    },
+    {
+      "id": 7,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Pink-Angel-EPI?$SQUARE-575x575-2X$",
+      "product_name": "ANGEL",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$21.56"
+    },
+    {
+      "id": 8,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Pink-Valentine-EPI?$SQUARE-575x575-2X$",
+      "product_name": "VALENTINE",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$44.24"
+    },
+    {
+      "id": 9,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LipKit-Matte-Berry-Tipsy-EPI?$SQUARE-575x575-2X$",
+      "product_name": "BREEZE",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$20.26"
+    },
+    {
+      "id": 10,
+      "img": "https://coty.scene7.com/is/image/cotyemea/4064941006855_KJC_MLK_21_No_Sleep_200_3ml_0.10oz_Swatch.jpg-JPG-300dpi?$SQUARE-575x575-2X$",
+      "product_name": "PEACH",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$31.97"
+    },
+    {
+      "id": 11,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LiquidLipstick-Matte-DolceK-EPI?$SQUARE-575x575-2X$",
+      "product_name": "NUDE",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$24.26"
+    },
+    {
+      "id": 12,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LiquidLipstick-Matte-PosieK-EPI?$SQUARE-575x575-2X$",
+      "product_name": "BARBIE",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$36.04"
+    },
+    {
+      "id": 13,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LiquidLipstick-Matte-MaryJoK-EPI?$SQUARE-575x575-2X$",
+      "product_name": "MARLYN",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$43.48"
+    },
+    {
+      "id": 14,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LiquidLipstick-Matte-CallMe-EPI?$SQUARE-575x575-2X$",
+      "product_name": "CHRISTMAS",
+      "description": "Revision of Spacer in Lum Jt, Perc Endo Approach",
+      "price": "$27.52"
+    },
+    {
+      "id": 15,
+      "img": "https://coty.scene7.com/is/image/cotyemea/KC-LiquidLipstick-Matte-HighMaintenance-EPI?$SQUARE-575x575-2X$",
+      "product_name": "VICTORIOUS",
+      "description": "Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml",
+      "price": "$24.78"
+    }
+  ]
+}

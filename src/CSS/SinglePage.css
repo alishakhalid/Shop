@@ -1,0 +1,27 @@
+button {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.singleImg {
+  width: 400px;
+  height: 400px;
+  align-self: center;
+}
+.btn.btn-primary {
+  background-color: palevioletred;
+  border: palevioletred;
+}
+.btn.btn-primary:hover {
+  background-color: #f8d7af;
+}
+
+.col-md-4 {
+  padding: 3em;
+}
+.Singlecard {
+  align-self: center;
+  text-align: center;
+  margin-top: 5%;
+}
