@@ -1,4 +1,4 @@
-import React, {  useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Product from "./Product";
@@ -6,14 +6,18 @@ import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 //searchcontext umbenennen
 import { SearchContext } from "./Context/SeacrhContext";
-import {getAllProducts} from "./ProductService";
+import { getAllProducts } from "./ProductService";
 
 function AllProductPage() {
   const [products, setProduct] = useState<ProductType[]>([]);
+  const [isLoading, setisLoading] = useState<boolean>(true);
   const { search } = useContext(SearchContext);
 
   useEffect(() => {
-   getAllProducts().then((res)=> setProduct(res.data));
+    getAllProducts().then((resolve) => {
+      setProduct(resolve.data);
+      setisLoading(false);
+    });
   }, []);
 
   return (
@@ -22,6 +26,7 @@ function AllProductPage() {
         <Header />
         <Container>
           <Row>
+            {isLoading && <h1>Page is loading...</h1>}
             {products
               .filter((product) => {
                 return (
