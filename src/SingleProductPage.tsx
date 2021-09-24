@@ -6,23 +6,16 @@ import "./CSS/SinglePage.css";
 import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 import Footer from "./Footer";
+import {getSingleProducts} from "./ProductService";
 
 export const SingleProductPage = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<ProductType>({} as ProductType);
 
   useEffect(() => {
-    fetch("http://localhost:3003/products/" + id)
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((res) => {
-        setProduct(res);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
-  }, [id]);
+    getSingleProducts(id).then((res)=> setProduct(res.data));
+ 
+   }, [id]);
 
   return (
     <>

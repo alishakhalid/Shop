@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useContext, useEffect, useState } from "react";
 import "./App.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Product from "./Product";
@@ -6,24 +6,15 @@ import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 //searchcontext umbenennen
 import { SearchContext } from "./Context/SeacrhContext";
-import Footer from "./Footer";
+import {getAllProducts} from "./ProductService";
 
 function AllProductPage() {
   const [products, setProduct] = useState<ProductType[]>([]);
   const { search } = useContext(SearchContext);
 
   useEffect(() => {
-    fetch("http://localhost:3003/products")
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((product) => {
-        setProduct(product);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
-  }, [products]);
+   getAllProducts().then((res)=> setProduct(res.data));
+  }, []);
 
   return (
     <>
