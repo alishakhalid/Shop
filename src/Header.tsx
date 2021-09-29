@@ -17,6 +17,7 @@ export default function Header() {
         >
           <Nav.Link href="/product">LIP KITS</Nav.Link>
           <Nav.Link href="/skin">SKIN</Nav.Link>
+          <Nav.Link href="/form">Registrate</Nav.Link>
         </Nav>
         <Search />
       </Navbar.Collapse>

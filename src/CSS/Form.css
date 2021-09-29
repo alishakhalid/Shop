@@ -1,0 +1,29 @@
+.button {
+  margin-top: 2em;
+  text-align: center;
+  background-color: #ee769e;
+  color: #fcfcfc;
+}
+button {
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.field {
+  width: fit-content;
+}
+
+.fieldset {
+  padding: 5em;
+  padding-top: 50px;
+  margin-top: 10%;
+  background-color: #f89cb9;
+  width: 50em;
+  margin-left: 30%;
+}
+.body {
+  background-color: #ffffff;
+}
+error {
+  color: #ff0000;
+}
