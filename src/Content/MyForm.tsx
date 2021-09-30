@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/MyForm.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 interface FormValues {
@@ -69,7 +69,7 @@ export default function MyForm() {
                   <Field
                     type="text"
                     name="firstname"
-                    placeholder="Max"
+                    placeholder="Ethan"
                     class="form-control"
                   />
                   <div className="error">
@@ -81,7 +81,7 @@ export default function MyForm() {
                   <Field
                     type="text"
                     name="lastname"
-                    placeholder="Muster"
+                    placeholder="gray"
                     class="form-control"
                   />
                   <div className="error">
@@ -94,7 +94,7 @@ export default function MyForm() {
                     type="email"
                     name="email"
                     class="form-control"
-                    placeholder="maxmuster@gmail.com"
+                    placeholder="ethangray@gmail.com"
                   />
                   <div className="error">
                     {errors.email && touched.email && errors.email}

@@ -4,18 +4,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/MyForm.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import axios from "axios";
 import { addProduct } from "../ProductService";
+import { ProductType } from "../TypeProduct";
 
-export interface FormValues {
-  id: number;
-  img: string;
-  product_name: string;
-  description: string;
-  price: string;
-}
+// export interface FormValues {
+//   id: number;
+//   img: string;
+//   product_name: string;
+//   description: string;
+//   price: string;
+// }
 
-const initialValues: FormValues = {
+const initialValues: ProductType = {
   img: "",
   product_name: "",
   description: "",
@@ -39,7 +39,7 @@ const schema = Yup.object().shape({
 });
 
 export default function AddProduct() {
-  const handleSubmit = (values: FormValues): void => {
+  const handleSubmit = (values: ProductType): void => {
     addProduct(values);
     alert(JSON.stringify(values));
   };
@@ -113,7 +113,7 @@ export default function AddProduct() {
                 <div>
                   <label htmlFor="price">Price: </label>
                   <Field
-                    type="number"
+                    type="currency"
                     name="price"
                     class="form-control"
                     placeholder="25.00"

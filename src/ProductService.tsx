@@ -1,5 +1,4 @@
 import axios from "axios";
-import { FormValues } from "./Content/AddProduct";
 import { ProductType } from "./TypeProduct";
 
 const API = axios.create({
@@ -14,6 +13,6 @@ export const getSingleProducts = (id: string) => {
 };
 
 //post
-export const addProduct = (data: FormValues) => {
+export const addProduct = (data: ProductType) => {
   return API.post("/products", data);
 };

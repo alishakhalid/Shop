@@ -30,9 +30,7 @@ function AllProductPage() {
             {products
               .filter((product) => {
                 return (
-                  product.product_name.toLowerCase().includes(search) ||
-                  !search ||
-                  product.price.toLowerCase().includes(search)
+                  product.product_name.toLowerCase().includes(search) || !search
                 );
               })
               .map((product: ProductType) => {
