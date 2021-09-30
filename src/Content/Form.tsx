@@ -4,8 +4,6 @@ import "../CSS/Form.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Header";
 import * as yup from "yup";
-// import { useForm } from "react-yup";
-// import { yupResolver } from "@hookform/resolvers/yup";
 
 interface MyFormValues {
   firstname: string;
@@ -13,6 +11,13 @@ interface MyFormValues {
   email: string;
   password: string;
 }
+
+const initialValues: MyFormValues = {
+  firstname: "",
+  lastname: "",
+  email: "",
+  password: "",
+};
 
 const validation = yup.object().shape({
   firstname: yup
@@ -25,20 +30,14 @@ const validation = yup.object().shape({
     .required("Required"),
   email: yup.string().email("Email is invalid").required("Required"),
   password: yup.string().min(8, "Must be 8 characters").required("Required"),
-  confirmPassword: yup.string().oneOf([yup.ref("password"), null]),
 });
 export default function Registrate() {
   return (
     <>
-      <div className="body">
-        <Header />
+      <Header />
+      <div className="page">
         <Formik
-          initialValues={{
-            firstname: "",
-            lastname: "",
-            email: "",
-            password: "",
-          }}
+          initialValues={initialValues}
           onSubmit={(
             values: MyFormValues,
             { setSubmitting }: FormikHelpers<MyFormValues>
@@ -55,6 +54,7 @@ export default function Registrate() {
           {({ values, errors, touched }) => (
             <Form>
               <fieldset className="fieldset">
+                <h1>Sign up</h1>
                 <div>
                   <label htmlFor={values.firstname}>Firstname: </label>
                   <Field

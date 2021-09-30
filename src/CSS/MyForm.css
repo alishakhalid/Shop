@@ -1,0 +1,37 @@
+.form {
+  margin-top: 5%;
+  margin-left: 35%;
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
+  width: fit-content;
+  padding: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: #eb93b1;
+}
+body {
+  background-color: #ffffff;
+}
+/* move to index.css */
+/* * {
+  box-sizing: border-box;
+} */
+.button {
+  margin-top: 10%;
+  text-align: center;
+  background-color: #ee769e;
+  color: #fcfcfc;
+}
+button {
+  border-radius: 5px;
+}
+.error {
+  color: #d81858;
+}
+input:placeholder-shown {
+  font-style: italic;
+}
+/* span {
+  color: white;
+} */
