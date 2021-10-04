@@ -42,10 +42,3 @@
 div.card {
   border-color: #fff;
 }
-.footer {
-  width: 100%;
-  position: sticky;
-  text-align: center;
-  background-color: #ffc0cb;
-  height: 2em;
-}

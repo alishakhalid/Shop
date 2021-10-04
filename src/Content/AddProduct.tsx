@@ -6,7 +6,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { addProduct } from "../ProductService";
 import { ProductType } from "../TypeProduct";
-import { TextField } from "@material-ui/core";
 
 // export interface FormValues {
 //   id: number;
@@ -62,29 +61,22 @@ export default function AddProduct() {
                 </div>
 
                 <div>
-                  {/* <label htmlFor="id">Id: </label> */}
-                  <TextField
-                    label="Id"
+                  <label htmlFor="id">Id: </label>
+                  <Field
                     type="text"
                     name="id"
                     placeholder="16"
-                    fullWidth
-                    helperText={touched.id ? errors.id : ""}
-                    error={touched.id && Boolean(errors.id)}
+                    class="form-control"
                   />
-                  <ErrorMessage name="id">
-                    {(msg) => <div className="error">{msg}</div>}
-                  </ErrorMessage>
-                  {/* <div className="error">{touched.id && errors.id}</div> */}
+                  <div className="error">{touched.id && errors.id}</div>
                 </div>
                 <div>
-                  {/* <label htmlFor="img">Image-url: </label> */}
-                  <TextField
-                    label="Image-url"
+                  <label htmlFor="img">Image-url: </label>
+                  <Field
                     type="text"
                     name="img"
                     placeholder="Muster"
-                    fullWidth
+                    class="form-control"
                   />
                   <div className="error">
                     {errors.img && touched.img && errors.img}

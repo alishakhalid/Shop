@@ -1,0 +1,13 @@
+.MuiAppBar-colorPrimary {
+  position: sticky;
+  text-align: center !important;
+  background-color: #ffc0cb !important;
+}
+
+/* .MuiTypography-root.MuiTypography-body1.MuiTypography-colorInherit {
+  text-align: center !important;
+} */
+
+.MuiBottomNavigation-root {
+  text-align: center;
+}
