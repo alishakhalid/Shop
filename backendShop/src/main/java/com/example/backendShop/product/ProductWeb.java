@@ -1,4 +1,7 @@
 package com.example.backendShop.product;
+
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * -----------------------------------------------------
  * Author:          Alisha Khalid
@@ -6,5 +9,8 @@ package com.example.backendShop.product;
  * Projekt:         project name
  * Beschreibung:    Kurzbeschreibung
  * ------------------------------------------------------
- **/public class ProductWeb {
+ **/
+@RestController
+public class ProductWeb {
+    private Product product;
 }

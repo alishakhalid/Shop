@@ -1,4 +1,5 @@
 package com.example.backendShop.product;
+
 /**
  * -----------------------------------------------------
  * Author:          Alisha Khalid
@@ -6,5 +7,6 @@ package com.example.backendShop.product;
  * Projekt:         project name
  * Beschreibung:    Kurzbeschreibung
  * ------------------------------------------------------
- **/public interface ProductRepository {
+ **/
+public interface ProductRepository {
 }
