@@ -111,6 +111,20 @@
       "description": "Matte Liquid Lipstick",
       "id": "16",
       "price": 15
+    },
+    {
+      "img": "https://media1.popsugar-assets.com/files/thumbor/sbk9dwqGU2lwmF1_cr7FdLGIfrw/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2019/08/15/725/n/1922153/86e833625d558764cbd381.64373610_/i/Kylie-Cosmetics-Lip-Kit-Sale-2019.jpg",
+      "product_name": "ROSE GOLD",
+      "description": "This is nuweda",
+      "id": "019",
+      "price": "34"
+    },
+    {
+      "img": "https://media1.popsugar-assets.com/files/thumbor/sbk9dwqGU2lwmF1_cr7FdLGIfrw/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2019/08/15/725/n/1922153/86e833625d558764cbd381.64373610_/i/Kylie-Cosmetics-Lip-Kit-Sale-2019.jpg",
+      "product_name": "ROSE GOLD",
+      "description": "This is nuweda",
+      "id": "023",
+      "price": "34"
     }
   ]
 }

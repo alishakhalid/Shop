@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/MyForm.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { addProduct } from "../ProductService";
 import { ProductType } from "../TypeProduct";
@@ -65,6 +65,7 @@ export default function AddProduct() {
                   <Field
                     type="text"
                     name="id"
+                    data-cy="id"
                     placeholder="16"
                     class="form-control"
                   />
@@ -75,6 +76,7 @@ export default function AddProduct() {
                   <Field
                     type="text"
                     name="img"
+                    data-cy="img"
                     placeholder="Muster"
                     class="form-control"
                   />
@@ -87,6 +89,7 @@ export default function AddProduct() {
                   <Field
                     type="text"
                     name="product_name"
+                    data-cy="product_name"
                     class="form-control"
                     placeholder="GOLDEN HOUR"
                   />
@@ -101,6 +104,7 @@ export default function AddProduct() {
                   <Field
                     type="description"
                     name="description"
+                    data-cy="description"
                     class="form-control"
                     placeholder="Matte Liquid Lipstick 0.10 FL. Oz. fl-oz / Matte Liquid Lipstick 3.00 ML ml"
                   />
@@ -115,6 +119,7 @@ export default function AddProduct() {
                   <Field
                     type="currency"
                     name="price"
+                    data-cy="price"
                     class="form-control"
                     placeholder="25.00"
                   />
@@ -125,6 +130,7 @@ export default function AddProduct() {
                 <button
                   type="submit"
                   className="button"
+                  data-cy="submitButton"
                   disabled={isSubmitting}
                 >
                   Submit
