@@ -1,7 +1,12 @@
 package com.example.backendShop.product;
 
+import javax.persistence.*;
+
+@Entity
 public class Product {
-    private int id;
+
+    @Id
+    int id;
     private String img;
     private String product_name;
     private String description;
