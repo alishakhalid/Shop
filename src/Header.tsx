@@ -15,7 +15,7 @@ export default function Header() {
           style={{ maxHeight: "100px" }}
           navbarScroll
         >
-          <Nav.Link href="/product">LIP KITS</Nav.Link>
+          <Nav.Link href="/lipkit">LIP KITS</Nav.Link>
           <Nav.Link href="/skin">SKIN</Nav.Link>
           <Nav.Link href="/add">Add new Lipkit</Nav.Link>
           <Nav.Link href="/registrate">Registrate</Nav.Link>

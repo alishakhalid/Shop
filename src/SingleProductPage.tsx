@@ -6,16 +6,15 @@ import "./CSS/SinglePage.css";
 import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 import Footer from "./Footer";
-import {getSingleProducts} from "./ProductService";
+import { getSingleProducts } from "./ProductService";
 
 export const SingleProductPage = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<ProductType>({} as ProductType);
 
   useEffect(() => {
-    getSingleProducts(id).then((res)=> setProduct(res.data));
- 
-   }, [id]);
+    getSingleProducts(id).then((res) => setProduct(res.data));
+  }, [id]);
 
   return (
     <>
@@ -26,9 +25,9 @@ export const SingleProductPage = () => {
           <div className="card-body">
             <h5 className="card-title">{product.product_name}</h5>
             <p className="card-text">Description: {product.description}</p>
-            <p>Price: {product.price}</p>
+            <p>Price: ${product.price}</p>
           </div>
-          <a href={"http://localhost:3000/product"} className="button">
+          <a href={"http://localhost:3000/lipkit"} className="button">
             <Button>Go back</Button>
           </a>
         </div>

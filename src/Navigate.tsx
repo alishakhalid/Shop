@@ -12,8 +12,8 @@ export default function Navigate() {
     <BrowserRouter>
       <Switch>
         <Route exact path={"/"} component={Home} />
-        <Route exact path={"/product"} component={AllLipkit} />
-        <Route exact path={"/product/:id"} component={SingleProductPage} />
+        <Route exact path={"/lipkit"} component={AllLipkit} />
+        <Route exact path={"/lipkit/:id"} component={SingleProductPage} />
         <Route exact path={"/skin"} component={SkinCarePage} />
         <Route exact path={"/add"} component={AddProduct} />
         <Route exact path={"/registrate"} component={MyForm} />

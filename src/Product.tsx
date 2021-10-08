@@ -20,7 +20,7 @@ export const Product = ({
           <p className="card-text">{description}</p>
           <p>Price: {price}</p>
         </div>
-        <a href={"http://localhost:3000/product/" + id} className="button">
+        <a href={"http://localhost:3000/lipkit/" + id} className="button">
           <Button>View</Button>{" "}
         </a>
       </div>
