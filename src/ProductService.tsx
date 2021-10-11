@@ -16,3 +16,13 @@ export const getSingleProducts = (id: string) => {
 export const addProduct = (data: ProductType) => {
   return API.post("/", data);
 };
+
+//put
+export const updateProductById = (data: ProductType, id: string) => {
+  return API.put("/" + id, data);
+};
+
+//delete
+export const deleteProductById = (id: string) => {
+  return API.delete("/" + id);
+};

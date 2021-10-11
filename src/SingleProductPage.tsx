@@ -1,12 +1,17 @@
 import { useParams } from "react-router";
 import React, { useEffect, useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS/SinglePage.css";
 import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 import Footer from "./Footer";
-import { getSingleProducts } from "./ProductService";
+import {
+  deleteProductById,
+  getSingleProducts,
+  updateProductById,
+} from "./ProductService";
+import EditProduct from "./Content/EditProduct";
 
 export const SingleProductPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -25,11 +30,23 @@ export const SingleProductPage = () => {
           <div className="card-body">
             <h5 className="card-title">{product.product_name}</h5>
             <p className="card-text">Description: {product.description}</p>
-            <p>Price: ${product.price}</p>
+            <p>Price in $: {product.price}</p>
           </div>
-          <a href={"http://localhost:3000/lipkit"} className="button">
-            <Button>Go back</Button>
-          </a>
+          <Row>
+            <Col md={4}>
+              <a href={"http://localhost:3000/lipkit"} className="button">
+                <Button>Go back</Button>
+              </a>
+            </Col>
+            <Col md={4}>
+              <a href={"http://localhost:3000/edit"} className="button">
+                <Button>Edit</Button>
+              </a>
+            </Col>
+            <Col md={4}>
+              <Button onClick={() => deleteProductById(id)}>Delete</Button>
+            </Col>
+          </Row>
         </div>
       </Card>
       <Footer />

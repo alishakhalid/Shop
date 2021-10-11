@@ -14,7 +14,7 @@ export default function Home() {
           />
           <Carousel.Caption>
             <h3>Welcome to Khalid's Cosmetics</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Buy your favorites</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -25,10 +25,8 @@ export default function Home() {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>NEW COLLECTION</h3>
+            <p>Don't miss out</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

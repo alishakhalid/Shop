@@ -18,7 +18,7 @@ export const Product = ({
         <div className="card-body">
           <h5 className="card-title">{product_name}</h5>
           <p className="card-text">{description}</p>
-          <p>Price: {price}</p>
+          <p>Price in $: {price}</p>
         </div>
         <a href={"http://localhost:3000/lipkit/" + id} className="button">
           <Button>View</Button>{" "}

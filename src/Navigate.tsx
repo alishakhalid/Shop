@@ -6,6 +6,7 @@ import SingleProductPage from "./SingleProductPage";
 import SkinCarePage from "./SkinCarePage";
 import MyForm from "./Content/MyForm";
 import AddProduct from "./Content/AddProduct";
+import EditProduct from "./Content/EditProduct";
 
 export default function Navigate() {
   return (
@@ -17,6 +18,7 @@ export default function Navigate() {
         <Route exact path={"/skin"} component={SkinCarePage} />
         <Route exact path={"/add"} component={AddProduct} />
         <Route exact path={"/registrate"} component={MyForm} />
+        <Route exact path={"/edit"} component={EditProduct} />
       </Switch>
     </BrowserRouter>
   );
