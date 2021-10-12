@@ -18,8 +18,8 @@ export const addProduct = (data: ProductType) => {
 };
 
 //put
-export const updateProductById = (data: ProductType, id: string) => {
-  return API.put("/" + id, data);
+export const updateProduct = (data: ProductType) => {
+  return API.put("/", data);
 };
 
 //delete

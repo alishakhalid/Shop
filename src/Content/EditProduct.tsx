@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/MyForm.css";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { updateProductById } from "../ProductService";
+import { getSingleProducts, updateProduct } from "../ProductService";
 import { ProductType } from "../TypeProduct";
 import { useParams } from "react-router";
+
+// export interface FormValues {
+//   id: number;
+//   img: string;
+//   product_name: string;
+//   description: string;
+//   price: string;
+// }
 
 const initialValues: ProductType = {
   img: "",
@@ -33,9 +41,14 @@ const schema = Yup.object().shape({
 
 export default function EditProduct() {
   const { id } = useParams<{ id: string }>();
+
+  useEffect(() => {
+    getSingleProducts(id).then((products) => products.data);
+  }, []);
+
   const handleSubmit = (values: ProductType): void => {
-    updateProductById(values, id);
-    alert(JSON.stringify(values));
+    updateProduct(values);
+    alert("Successfully updated");
   };
   return (
     <>
@@ -127,7 +140,7 @@ export default function EditProduct() {
                   data-cy="submitButton"
                   disabled={isSubmitting}
                 >
-                  Update
+                  Submit
                 </button>
               </Form>
             );

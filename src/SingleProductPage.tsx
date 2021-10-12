@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import {
   deleteProductById,
   getSingleProducts,
-  updateProductById,
+  updateProduct,
 } from "./ProductService";
 import EditProduct from "./Content/EditProduct";
 
@@ -44,7 +44,12 @@ export const SingleProductPage = () => {
               </a>
             </Col>
             <Col md={4}>
-              <Button onClick={() => deleteProductById(id)}>Delete</Button>
+              <Button
+                href={"http://localhost:3000/lipkit"}
+                onClick={() => deleteProductById(id)}
+              >
+                Delete
+              </Button>
             </Col>
           </Row>
         </div>
