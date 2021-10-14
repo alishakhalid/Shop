@@ -6,11 +6,7 @@ import "./CSS/SinglePage.css";
 import { ProductType } from "./TypeProduct";
 import Header from "./Header";
 import Footer from "./Footer";
-import {
-  deleteProductById,
-  getSingleProducts,
-  updateProduct,
-} from "./ProductService";
+import { deleteProductById, getSingleProducts } from "./ProductService";
 import EditProduct from "./Content/EditProduct";
 
 export const SingleProductPage = () => {

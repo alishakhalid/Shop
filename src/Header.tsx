@@ -18,7 +18,7 @@ export default function Header() {
           <Nav.Link href="/lipkit">LIP KITS</Nav.Link>
           <Nav.Link href="/skin">SKIN</Nav.Link>
           <Nav.Link href="/add">Add new Lipkit</Nav.Link>
-          <Nav.Link href="/registrate">Registrate</Nav.Link>
+          <Nav.Link href="/login">Login</Nav.Link>
         </Nav>
         <Search />
       </Navbar.Collapse>

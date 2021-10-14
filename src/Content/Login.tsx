@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/MyForm.css";
@@ -6,15 +6,11 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 interface FormValues {
-  firstname: string;
-  lastname: string;
   email: string;
   password: string;
 }
 
 const initialValues: FormValues = {
-  firstname: "",
-  lastname: "",
   email: "",
   password: "",
 };
@@ -25,14 +21,6 @@ const numeric = new RegExp("(?=.*[0-9])");
 const specialChar = new RegExp("(?=.*[!@#$%^&*])");
 
 const schema = Yup.object().shape({
-  firstname: Yup.string()
-    .min(3, "at least 3 characters")
-    .max(20, "Must be 20 characters or less")
-    .required("Required"),
-  lastname: Yup.string()
-    .min(3, "at least 3 characters")
-    .max(25, "Must be 25 characters or less")
-    .required("Required"),
   email: Yup.string().email("Email is invalid").required("Required"),
   password: Yup.string()
     .min(8, "Must be 8 characters")
@@ -43,7 +31,10 @@ const schema = Yup.object().shape({
     .required("Required"),
 });
 
-export default function MyForm() {
+export default function Login() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
   const handleSubmit = (values: FormValues): void => {
     alert(JSON.stringify(values));
   };
@@ -59,35 +50,6 @@ export default function MyForm() {
           {({ errors, touched, isSubmitting }) => {
             return (
               <Form>
-                <div className="title">
-                  <h1>Sign up </h1>
-                  <hr></hr>
-                </div>
-
-                <div>
-                  <label htmlFor="firstname">Firstname:</label>
-                  <Field
-                    type="text"
-                    name="firstname"
-                    placeholder="Ethan"
-                    class="form-control"
-                  />
-                  <div className="error">
-                    {touched.firstname && errors.firstname}
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="lastname">Lastname: </label>
-                  <Field
-                    type="text"
-                    name="lastname"
-                    placeholder="gray"
-                    class="form-control"
-                  />
-                  <div className="error">
-                    {errors.lastname && touched.lastname && errors.lastname}
-                  </div>
-                </div>
                 <div>
                   <label htmlFor="email">Email: </label>
                   <Field
@@ -117,7 +79,7 @@ export default function MyForm() {
                   className="button"
                   disabled={isSubmitting}
                 >
-                  Submit
+                  Log in
                 </button>
               </Form>
             );
